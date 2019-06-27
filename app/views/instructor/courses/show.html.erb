@@ -4,6 +4,8 @@
   <br />
   <h5 class="text-center"><%= current_course.description %></h5>
   <br />
+  <%= image_tag @course.image, class: 'img-fluid' %>
+  <br />
   <%= link_to 'Preview As Student...', course_path(current_course), class: 'btn btn-warning float-right' %>
   <br class='clr' />
   <div class="text-center">
