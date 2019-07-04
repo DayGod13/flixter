@@ -9,8 +9,9 @@
             <%= link_to course.title, course_path(course) %>
         </h2>
         <br />
-        
-        <img src="<%= course.image.url %>" />
+     
+    
+        <%= image_tag course.image.url unless course.image.url.nil? %>
         
         <br />
         <div class="row">
