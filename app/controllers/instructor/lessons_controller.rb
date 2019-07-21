@@ -1,8 +1,8 @@
 class Instructor::LessonsController < ApplicationController
     before_action :authenticate_user!
     before_action :require_authorized_for_current_section, only: [:new, :create]
-    protect_from_forgery with: :null_session
     before_action :require_authorized_for_current_lesson, only: [:update]
+    skip_before_action :verify_authenticity_token
 
     def new
         @lesson = Lesson.new
