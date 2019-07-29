@@ -63,9 +63,44 @@
 
     <div id="footer">
       <div class="container">
+        <div class="row">
+      <div class="col-12 col-sm-3">
         <b>Teachers</b>
-    <br />
-    <%= link_to 'Teach a Course', new_instructor_course_path %>
+        <br />
+        <%= link_to 'Teach a Course', new_instructor_course_path %>
+        <br />
+        <%= link_to 'My Dashboard', dashboard_path %>
+      </div>
+      <div class="col-12 col-sm-3">
+        <b>About</b>
+        <br />
+        <%= link_to 'Team', team_path %>
+        <br />
+        <%= link_to 'Careers', careers_path %>
+        <br />
+        <%= link_to 'Privacy Policy', privacy_path %>
+      </div>
+      <div class="col-12 col-sm-3">
+        <b>Contact</b>
+        <br />
+        tobiaspasquale@gmail.com
+        <br />
+        10223 S 44th Way
+        <br />
+        Phoenix AZ, 85044
+      </div>
+      <div class="col-12 col-sm-3 social">
+        <b>Social</b>
+        <br />
+        <br />
+        <%= link_to 'https://github.com/DayGod13' do %>
+          <span class="fa fa-github-square fa-2x social-button"></span>
+        <% end %>
+        <%= link_to 'https://www.linkedin.com/in/tobias-pasquale-79115ab0/' do %>
+          <span class="fa fa-linkedin-square fa-2x social-button"></span>
+        <% end %>
+      </div>
+    </div>
       </div>
     </div>
 
